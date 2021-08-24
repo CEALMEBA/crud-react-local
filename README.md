@@ -3,5 +3,5 @@
 se cargan en tiempo real 
 - Si te da algun error en correr pon el siguinte comando: 
 *npm install react-scripts --save*
-
+---
 ![imagen](..\REACT-CRUD-LOCAL\Portada_react.png)
