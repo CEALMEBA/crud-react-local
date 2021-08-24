@@ -6,4 +6,4 @@ se cargan en tiempo real
 
 
 ---------------------------------------------------------------
-![](..\REACT-CRUD-LOCAL\Portada_react.jpg)
+![imagen](..\REACT-CRUD-LOCAL\Portada_react.png)
