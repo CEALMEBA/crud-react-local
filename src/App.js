@@ -86,22 +86,23 @@ class App extends React.Component {
       <>
       <Container>
       <br/>
-        <Button color="success" onClick={()=>this.mostrarModalInsertar()} >Insertar Nuevo </Button>
+        <Button outline color="success" onClick={()=>this.mostrarModalInsertar()} >Insertar Nuevo </Button>
          <br/> <br/>
-         <Table>
+         <Table dark>
            <thead><tr><th>Id</th>
            <th>Nombre</th>
            <th>Telefono</th>
-           <th>opciones</th> </tr></thead>
+           <th>opciones</th> 
+           </tr></thead>
            <tbody>
              {this.state,data.map((elemento)=>(
               <tr>
                  <td>{elemento.id}</td>
                  <td>{elemento.Nombre}</td>
                  <td>{elemento.Numero}</td>
-                 <td><Button color ="primary" onClick={()=>this.mostrarModalEditar(elemento)} >Editar</Button></td>
-                 {"  "}
-                 <td><Button color ="danger" onClick={()=>this.eliminar(elemento)}>Eliminar</Button></td>
+                 <td><Button outline color ="primary" onClick={()=>this.mostrarModalEditar(elemento)} >Editar</Button></td>
+                 {" "}
+                 <td><Button outline color ="danger" onClick={()=>this.eliminar(elemento)}>Eliminar</Button></td>
               </tr>
              ))}
            </tbody>
@@ -131,8 +132,8 @@ class App extends React.Component {
 
           </ModalBody>
           <ModalFooter>
-          <td><Button color ="primary" onClick={()=>this.insertar()} >agregar</Button></td>
-          <td><Button color ="danger" onClick={()=>this.ocultarModalInsertar()}>cancelar</Button></td>
+          <td><Button outline color ="primary" onClick={()=>this.insertar()} >agregar</Button></td>
+          <td><Button outline color ="danger" onClick={()=>this.ocultarModalInsertar()}>cancelar</Button></td>
           </ModalFooter>
         </Modal>
 
@@ -161,8 +162,8 @@ class App extends React.Component {
 
           </ModalBody>
           <ModalFooter>
-          <td><Button color ="primary" onClick={()=>this.editar(this.state.form)} >editar</Button></td>
-          <td><Button color ="danger" onClick={()=>this.ocultarModalEditar()}>cancelar</Button></td>
+          <td><Button outline color ="primary" onClick={()=>this.editar(this.state.form)} >editar</Button></td>
+          <td><Button outline color ="danger" onClick={()=>this.ocultarModalEditar()}>cancelar</Button></td>
           </ModalFooter>
         </Modal>
       </>)
